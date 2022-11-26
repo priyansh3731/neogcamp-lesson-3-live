@@ -3,11 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
 :root{
-    --primary-link: #2dd4bf;
+    --primary-color: #2dd4bf;
+    --dark-grey: #6b7280;
+    --off-white: #f3f4f6;
 }
 
 body{
     font-family: 'PT Serif', serif;
+    margin: 0px;
 }
 
 hr{
@@ -31,15 +34,15 @@ hr{
 }
 
 .primary-link{
-    background-color: var(--primary-link);
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
 }
 
 .secondary-link{
-    color: var(--primary-link);
+    color: var(--primary-color);
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-link);
+    border: 1px solid var(--primary-color);
 
 }
 
@@ -57,7 +60,7 @@ hr{
 /* navigaton */
 
 .navigation{
-    background-color: var(--primary-link);
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
@@ -79,4 +82,62 @@ hr{
 
 .navigation .link-active{
     font-weight: bold;
+}
+
+
+/* header */
+
+.hero{
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero .hero-img{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading{
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-grey);
+}
+
+.hero .hero-heading .heading-inverted{
+    color: var(--primary-color);
+}
+
+
+/* section */
+
+section{
+    padding: 2rem;
+}
+
+.section h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+.ow{
+    background-color: var(--off-white);
+}
+
+/* footer */
+
+.footer{
+      background-color: var(--primary-color);
+      padding: 2rem 0rem;
+      text-align: center;
+      color: white;
+      border-top-right-radius: 1rem;
+}
+
+.footer .link{
+    color: white;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
 }

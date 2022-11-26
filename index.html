@@ -7,7 +7,7 @@
     <title>componenet library</title>
 
     <!-- there is a problem to comment the first css method that's why i don't write it -->
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -95,35 +95,37 @@
 
    <h2>@header</h2>
 
-   <header>
-    <img src="image/hero.svg" />
-    <h1>heading inside hero</h1>
+   <header class="hero">
+    <img class="hero-img" src="image/hero.svg" />
+    <h1 class="hero-heading">heading inside<span class="heading-inverted"> hero</span></h1>
    </header>
 
    <hr>
 
    <h2>@section</h2>
    
-   <section>
-    <h3>white section</h3>
-    <p>this will have white background</p>
+   <section class="section">
+    <div class="container container-center">
+        <h1>white section</h1>
+    <p>Rohit Gurunath Sharma (born 30 April 1987) is an Indian international cricketer and the current captain of the Indian cricket team. He plays as a right-handed opening batter for the Indian national cricket team and also for the IPL-side Mumbai Indians. Rohit Sharma also captains Mumbai Indians in the Indian Premier</p>
+    </div>
    </section>
 
-   <section>
-    <h3>off white section</h3>
-    <p>this will have grey background</p>
+   <section class="section ow">
+    <div class="container container-center"><h1>off white section</h1>
+        <p>Rohit Gurunath Sharma (born 30 April 1987) is an Indian international cricketer and the current captain of the Indian cricket team. He plays as a right-handed opening batter for the Indian national cricket team and also for the IPL-side Mumbai Indians. Rohit Sharma also captains Mumbai Indians in the Indian Premier</p></div>
    </section>
   
    <hr>
 
-   <h2>@footer</h2>
+   <h2 class="footer">@footer</h2>
 
-   <footer>
-    <div>some small heading inside footer</div>
-    <ul>
-        <li>socialone</li>
-        <li>socialtwo</li>
-        <li>socialthree</li>
+   <footer class="footer">
+    <div class="footer-header">some small heading inside footer</div>
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline"><a class="link" href="socialone">socialone</a></li>
+        <li class="list-item-inline"><a class="link" href="socialone">socialtwo</a></li>
+        <li class="list-item-inline"><a class="link" href="socialone">socialthree</a></li>
     </ul>
    </footer>
 
